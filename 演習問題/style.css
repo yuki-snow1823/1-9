@@ -1,0 +1,68 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main{
+  width: 960px;
+  margin: 50px auto;
+}
+
+/*0ではなくautoにしておく*/
+
+.step-box {
+	float: left;
+	width: 300px;/*内側のpaddingこみ*/
+	margin-right: 30px;/*一旦全部に指定*/
+	padding: 10px;/*ボーダーの内側*/
+	position: relative;
+	border: 1px solid #eee;
+}
+
+.step-box:last-child {
+	margin-right: 0px
+}
+
+/*これで最後だけつかないという指定ができた*/
+
+
+.step-img1{
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.step-img2{
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.step-img3{
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.step-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #E37E49;
+	color: white;
+	padding: 3px;
+}
+
+.title{
+  margin: 15px 0 5px;
+}
